@@ -35,7 +35,8 @@ class grafana::install {
           }
 
           archive { '/tmp/grafana.deb':
-            source  => $real_package_source,
+            source       => $real_package_source,
+            proxy_server => $::grafana::http_proxy,
           }
 
           package { $::grafana::package_name:
@@ -157,6 +158,7 @@ class grafana::install {
         user            => 'grafana',
         group           => 'grafana',
         cleanup         => true,
+        proxy_server    => $::grafana::http_proxy,
         require         => File[$::grafana::install_dir],
       }
 

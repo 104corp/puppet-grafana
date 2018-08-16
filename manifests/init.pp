@@ -107,6 +107,7 @@
 #  }
 #
 class grafana (
+  Optional[String] $http_proxy          = undef,
   Optional[String] $archive_source      = undef,
   String $cfg_location                  = $::grafana::params::cfg_location,
   Hash $cfg                             = $::grafana::params::cfg,
