@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## v4.5.2
+
+- fix Debian download url.
+
 ## [v4.5.0](https://github.com/voxpupuli/puppet-grafana/tree/v4.5.0) (2018-07-15)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-grafana/compare/v4.4.1...v4.5.0)
